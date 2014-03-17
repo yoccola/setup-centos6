@@ -31,7 +31,7 @@ cat >> /root/.bashrc <<'EOF'
 . /usr/local/rbenv/bashrc
 EOF
 
-. /usr/local/rbenv/bashrc
+. /root/.bashrc
 
 rbenv install $ruby_version
 rbenv rehash
