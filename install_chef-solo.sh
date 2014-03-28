@@ -17,7 +17,7 @@ install_chef_solo() {
   if [ -f /etc/chef/solo.rb ]; then
     return 0
   fi &&
-  gem install chef knife-solo &&
+  gem i -V chef knife-solo &&
   if [ -f /usr/local/rbenv/shims/ruby ]; then
     # hard link
     ln /usr/local/rbenv/shims/ruby /usr/local/rbenv/shims/knife

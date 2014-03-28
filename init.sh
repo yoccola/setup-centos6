@@ -1,5 +1,9 @@
 #!/bin/bash
 
-sh install_yum_tools.sh
-sh install_rbenv.sh
-sh install_chef-solo.sh
+./init_settings.sh
+./install_yum_tools.sh
+./install_rbenv.sh
+. /root/.bashrc
+./install_chef-solo.sh
+. /root/.bashrc
+updatedb
